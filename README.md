@@ -123,26 +123,22 @@ A member record in `data/users.json` contains an internal ID, display name, emai
 }
 ```
 
-## Important: before a commercial launch
+## Technical Scope & Future Improvements
 
-This version now demonstrates real registration, login, logout, session handling and per-account data separation. **It is still a prototype, not a production-ready commercial service.** JSON files are deliberately used to keep the project easy to run and inspect; they are not a suitable long-term database for a paid service with concurrent users or significant traffic.
+FitTrack currently demonstrates a functional multi-user fitness tracking application, including user registration, authentication, session management, workout tracking and per-account data separation.
 
-Before selling access to customers, the owner should plan and implement at least:
+The project uses PHP and JSON-based storage to provide a lightweight, easy-to-run prototype. For a production deployment, the following improvements are planned:
 
-1. **Database migration:** MySQL or PostgreSQL with unique email constraints, transactions, indexes and database backups. Migrate users and workout records out of JSON files.
-2. **Production hosting:** HTTPS everywhere, secure server configuration, environment-based secrets, restricted file permissions, error logging and monitoring.
-3. **Account lifecycle:** email verification, password reset, change-password flow, account deletion and session/device management.
-4. **Abuse protection:** login rate limiting, brute-force protection, stronger validation, security testing and operational alerting.
-5. **Privacy and legal:** privacy policy, terms of service, retention/deletion rules, consent and compliance with the laws that apply in the markets where the service is sold.
-6. **Commercial features, if required:** payment provider integration, subscription plans, billing webhooks and account entitlement checks. These are not included in this version.
-7. **Reliability:** automated backups, restore testing, database migrations and a deployment process for updates.
+1. **Database scalability:** Migrate JSON storage to MySQL or PostgreSQL, with proper indexing, constraints and transaction management.
+2. **Security:** Implement HTTPS, environment-based configuration, login rate limiting and additional security testing.
+3. **Account management:** Add email verification, password recovery, account deletion and session/device management.
+4. **Privacy and compliance:** Introduce privacy policies, data retention rules and appropriate regulatory compliance.
+5. **Deployment and reliability:** Configure automated backups, monitoring, logging and a structured deployment workflow.
+6. **Commercial capabilities:** Integrate payment processing and subscription management if required.
 
-Calorie figures are user-entered estimates and should not be presented as medical measurements or health advice. Do not store sensitive medical information in this prototype.
+These improvements represent the next development steps toward a scalable, secure commercial service.
+## Health Data Disclaimer
 
-## Publication and client confidentiality
-
-Do not add client credentials, private endpoints, confidential datasets or identifying client information to the repository. Confirm contractual ownership and confidentiality terms before publishing or redistributing client-derived work.
-
----
+Calorie values are user-provided estimates and should not be interpreted as medically accurate measurements or professional health advice. This prototype is not designed to collect or store sensitive medical information.
 
 **FitTrack — Your journey, your pace.**
