@@ -2,7 +2,7 @@
 
 **FitTrack** is a responsive fitness and workout tracking web application. Members create personal accounts, log their workouts, review their activity analytics, set weekly goals, and receive encouraging messages based on their progress.
 
-> **Project note:** This project was originally developed as private client work. This package is a portfolio/demo version and contains no client credentials, private URLs, personal data, or identifying client information. Confirm that publication and distribution are permitted under the original agreement before making the repository public or delivering it commercially.
+> **Project note:** This project was originally developed as private client work. This package is a portfolio/demo version and contains no client credentials, private URLs, personal data, or identifying client information. 
 
 ## What's included
 
